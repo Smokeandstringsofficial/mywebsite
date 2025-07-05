@@ -72,6 +72,8 @@
   </style>
 </head>
 <body>
+  <!-- Load Shared Header -->
+  <div id="header-placeholder"></div>
 
   <!-- Intro Card -->
   <div class="contact-card">
@@ -107,6 +109,13 @@
       <small>(For legal purposes or digital receipts only)</small>
     </p>
   </div>
-
+    <!-- Load Header Script -->
+<script>
+  fetch("header/header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+    });
+</script>
 </body>
 </html>
