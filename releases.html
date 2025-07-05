@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Releases | Smoke & Strings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .release-container {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 24px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .release-container img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .stream-button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin: 8px 0;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      width: fit-content;
+      color: white;
+    }
+
+    .stream-button:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .stream-button img {
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .release-text {
+      flex: 2 1 400px;
+    }
+
+    .release-image {
+      flex: 1 1 240px;
+    }
+
+    .svg-icon {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .svg-icon h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      color: #f472b6;
+      margin: 12px 0 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Latest Release</h1>
+
+  <div class="release-container">
+    <!-- Song Thumbnail -->
+    <div class="release-image">
+      <img src="assets/SPOTIFY3000X3000.jpg" alt="Pyaar Nai Kardi Cover" />
+    </div>
+
+    <!-- Song Info -->
+    <div class="release-text">
+      <div class="svg-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#f472b6" viewBox="0 0 24 24" width="28px" height="28px">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+        <h2>Pyaar Nai Kardi - Smoke & Strings</h2>
+      </div>
+      <p>Official Release of "Pyaar Nai Kardi" is now yours 💘🤧🌻</p>
+
+      <!-- Streaming Links -->
+      <a href="https://open.spotify.com/artist/5OmYHh56IqJiXcsBcXp3be?si=DNPIVrpmTDavIR-xUwbQoQ" target="_blank" class="stream-button" style="background-color: #1db954;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify" />
+        Listen on Spotify
+      </a>
+
+      <a href="https://music.apple.com/" target="_blank" class="stream-button" style="background-color: #fc3c44;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg" alt="Apple Music" />
+        Listen on Apple Music
+      </a>
+
+      <a href="https://youtube.com/@smokeandstrings" target="_blank" class="stream-button" style="background-color: #ff0000;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/YouTube_social_white_circle_%282017%29.svg" alt="YouTube" />
+        Listen on YouTube
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
