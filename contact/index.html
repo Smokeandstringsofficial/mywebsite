@@ -14,6 +14,35 @@
       padding: 40px 20px;
     }
 
+      header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0a0a0a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #8c00ff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #ccc;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #8c00ff;
+    }
+
     .contact-card {
       background-color: #1f1f1f;
       color: #ffffff;
@@ -69,11 +98,44 @@
     small {
       color: #a3a3a3;
     }
+        footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #0a0a0a;
+      color: #555;
+      font-size: 14px;
+      margin-top: 80px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
   </style>
 </head>
 <body>
-  <!-- Load Shared Header -->
-  <div id="header-placeholder"></div>
+
+  <header>
+<div class="logo">
+  <img src="media/Logos/Header - White.png" alt="Smoke & Strings" style="height: 40px;" />
+</div>  <nav>
+    <a href="index.html">Home</a>
+    <a href="releases/">Releases</a>
+    <a href="#team">Our Team</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#follow">Follow Us</a>
+    <a href="#label">Record Label</a>
+    <a href="contact/">Contact Us</a>
+  </nav>
+</header>
 
   <!-- Intro Card -->
   <div class="contact-card">
@@ -117,5 +179,10 @@
       document.getElementById("header-placeholder").innerHTML = data;
     });
 </script>
+
+  <footer>
+    &copy; 2025 Smoke & Strings. All rights reserved.
+  </footer>
+
 </body>
 </html>

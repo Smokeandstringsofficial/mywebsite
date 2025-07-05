@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team | Smoke & Strings</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 32px;
+      color: #aaa;
+      font-size: 16px;
+    }
+
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+    }
+
+    .team-member {
+      background-color: #111;
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      max-width: 400px;
+      flex: 1;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .team-member img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+
+    .team-member h2 {
+      font-size: 20px;
+      margin: 8px 0 4px;
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .team-member h4 {
+      color: #ff80df;
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    .team-member p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .team-member a {
+      color: #ff80df;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .team-member a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Include -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("header/header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- Our Team Section -->
+  <div class="container">
+    <h1>Our Team</h1>
+    <h3>The Heart Behind Smoke & Strings</h3>
+    <p style="text-align:center; max-width:800px; margin: 0 auto 40px; color: #ccc;">
+      At <em>Smoke & Strings</em>, we’re more than just music — we’re a community of creators, dreamers, and storytellers. 
+      Every note, every lyric, and every design comes from a place of passion and authenticity. 
+      Here’s a look at the minds and souls driving the journey forward.
+    </p>
+
+    <div class="team-section">
+      <!-- Shivam -->
+      <div class="team-member">
+        <img src="assets/images/shivam.jpg" alt="Shivam Madaan" />
+        <h2>Shivam Madaan</h2>
+        <h4>Founder & the Face Behind Smoke & Strings</h4>
+        <p><strong>Shivam</strong> is the creative force behind <strong>Smoke & Strings</strong>, a sonic identity born out of emotion, reflection, and raw musical expression.</p>
+        <p><a href="#">About Shivam →</a></p>
+      </div>
+
+      <!-- Manmay -->
+      <div class="team-member">
+        <img src="assets/images/manmay.jpg" alt="Manmay Chauhan" />
+        <h2>Manmay Chauhan</h2>
+        <h4>Creative collaborator and co-producer at Smoke & Strings</h4>
+        <p><strong>Manmay</strong> is the quiet architect behind many sonic landscapes at Smoke & Strings. 
+        As a co-producer, arranger, and creative collaborator, Lead Singer and sometimes our Lead Guitarist, 
+        Manmay brings a deep sensitivity to sound — transforming raw emotion into polished, immersive experiences.</p>
+        <p><a href="#">About Manmay →</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
